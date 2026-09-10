@@ -4,10 +4,13 @@ public class Principal {
         meuFilme.nome = "Interestelar";
         meuFilme.anoDeLancamento = 2014;
         meuFilme.duracaoEmMinutos = 160;
+        meuFilme.incluidoNoPlano = true;
 
-        System.out.println(meuFilme.nome);
-        System.out.println(meuFilme.anoDeLancamento);
-        System.out.println(meuFilme.duracaoEmMinutos);
-
+        meuFilme.exibeFichaTecnica();
+        meuFilme.avalia(8.3);
+        meuFilme.avalia(7.4);
+        meuFilme.avalia(9.2);
+        meuFilme.avalia(5.4);
+        System.out.println("Avaliação: " + meuFilme.somaDasAvaliacoes);
     }
 }
