@@ -1,16 +1,21 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Principal {
-    static void main() {
+    public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Interestelar";
-        meuFilme.anoDeLancamento = 2014;
-        meuFilme.duracaoEmMinutos = 160;
-        meuFilme.incluidoNoPlano = true;
+        meuFilme.setNome("O poderoso chefão");
+        meuFilme.setAnoDeLancamento(1970);
+        meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
-        meuFilme.avalia(8.3);
-        meuFilme.avalia(7.4);
-        meuFilme.avalia(9.2);
-        meuFilme.avalia(5.4);
-        System.out.println("Avaliação: " + meuFilme.somaDasAvaliacoes);
+        meuFilme.avalia(8);
+        meuFilme.avalia(5);
+        meuFilme.avalia(10);
+        //System.out.println(meuFilme.somaDasAvaliacoes);
+        //System.out.println(meuFilme.otalDeAvaliacoes);
+        System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
+
+        System.out.println(meuFilme.pegaMedia());
+
     }
 }
