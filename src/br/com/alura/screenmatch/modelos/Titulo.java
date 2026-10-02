@@ -26,7 +26,7 @@ public class Titulo {
         return incluidoNoPlano;
     }
 
-    public double getDuracaoEmMinutos() {
+    public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
 

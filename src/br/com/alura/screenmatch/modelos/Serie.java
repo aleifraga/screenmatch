@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie  extends Titulo{
+public class Serie  extends Titulo {
     private int temporada;
     private boolean ativa;
     private int episodiosPorTemporada;
@@ -40,7 +40,7 @@ public class Serie  extends Titulo{
     }
 
     @Override
-    public double getDuracaoEmMinutos() {
+    public int getDuracaoEmMinutos() {
         return temporada*episodiosPorTemporada*minutosPorEpisodio;
     }
 }
